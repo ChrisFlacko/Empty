@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/main.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/main.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/main.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/main.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/startup.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/startup.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/startup.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/startup.c.obj"
+}
+]
