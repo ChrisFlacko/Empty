@@ -1,0 +1,3 @@
+/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir
+/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/edit_cache.dir
+/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/rebuild_cache.dir
