@@ -10,5 +10,53 @@
   "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/startup.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/startup.c\"",
   "file": "/Users/chris/Visual Studio Projects/Empty/src/startup.c",
   "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/startup.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/os.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/os.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/os.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/os.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/adc_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/adc_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/adc_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/adc_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/clock_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/clock_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/clock_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/clock_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/dma_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/dma_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/dma_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/dma_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/i2c_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/i2c_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/spi_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/spi_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/spi_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/spi_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/rcc_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/rcc_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/gpio_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/gpio_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj"
 }
 ]

@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Cortex Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/EMPTY.elf",
+
+            "servertype": "stlink",
+            "device": "STM32F303RE",
+
+            "gdbPath": "/opt/arm-toolchain/bin/arm-none-eabi-gdb",
+
+            "interface": "swd",
+
+            "preLaunchCommands": [
+                "load"                 // <-- flasht dein ELF
+            ],
+
+            "runToEntryPoint": "main"
+        }
+    ]
+}

@@ -55,8 +55,6 @@ build CMakeFiles/EMPTY.dir/src/main.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Us
   FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
   OBJECT_DIR = CMakeFiles/EMPTY.dir
   OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/EMPTY.dir/
-  TARGET_PDB = EMPTY.pdb
 
 build CMakeFiles/EMPTY.dir/src/startup.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/startup.c || cmake_object_order_depends_target_EMPTY
   CONFIG = Debug
@@ -64,8 +62,62 @@ build CMakeFiles/EMPTY.dir/src/startup.c.obj: C_COMPILER__EMPTY_unscanned_Debug 
   FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
   OBJECT_DIR = CMakeFiles/EMPTY.dir
   OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/EMPTY.dir/
-  TARGET_PDB = EMPTY.pdb
+
+build CMakeFiles/EMPTY.dir/src/os.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/os.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/os.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/adc_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/adc_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/adc_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/clock_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/clock_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/clock_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/dma_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/dma_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/dma_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/i2c_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/spi_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/spi_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/spi_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/rcc_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/gpio_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
 
 
 # =============================================================================
@@ -73,18 +125,17 @@ build CMakeFiles/EMPTY.dir/src/startup.c.obj: C_COMPILER__EMPTY_unscanned_Debug 
 
 
 #############################################
-# Link the executable EMPTY
+# Link the executable EMPTY.elf
 
-build EMPTY: C_EXECUTABLE_LINKER__EMPTY_Debug CMakeFiles/EMPTY.dir/src/main.c.obj CMakeFiles/EMPTY.dir/src/startup.c.obj
+build EMPTY.elf: C_EXECUTABLE_LINKER__EMPTY_Debug CMakeFiles/EMPTY.dir/src/main.c.obj CMakeFiles/EMPTY.dir/src/startup.c.obj CMakeFiles/EMPTY.dir/src/os.c.obj CMakeFiles/EMPTY.dir/src/adc_driver.c.obj CMakeFiles/EMPTY.dir/src/clock_driver.c.obj CMakeFiles/EMPTY.dir/src/dma_driver.c.obj CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj CMakeFiles/EMPTY.dir/src/spi_driver.c.obj CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = "-T/Users/chris/Visual Studio Projects/Empty/linker.ld" -nostdlib -Wl,--gc-sections
   OBJECT_DIR = CMakeFiles/EMPTY.dir
-  POST_BUILD = :
+  POST_BUILD = cd "/Users/chris/Visual Studio Projects/Empty/build" && /opt/homebrew/bin/arm-none-eabi-objcopy -O binary /Users/chris/Visual\ Studio\ Projects/Empty/build/EMPTY.elf /Users/chris/Visual\ Studio\ Projects/Empty/build/EMPTY.elf.bin
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/EMPTY.dir/
-  TARGET_FILE = EMPTY
-  TARGET_PDB = EMPTY.pdb
+  TARGET_FILE = EMPTY.elf
+  TARGET_PDB = EMPTY.elf.dbg
 
 
 #############################################
@@ -113,6 +164,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build EMPTY: phony EMPTY.elf
+
 # =============================================================================
 # Folder targets.
 
@@ -121,7 +174,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/chris/Visual Studio Projects/Empty/build
 
-build all: phony EMPTY
+build all: phony EMPTY.elf
 
 # =============================================================================
 # Built-in targets
@@ -130,14 +183,14 @@ build all: phony EMPTY
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/chris/Visual$ Studio$ Projects/Empty/build/cmake_install.cmake: RERUN_CMAKE | /Users/chris/Visual$ Studio$ Projects/Empty/CMakeLists.txt /Users/chris/Visual$ Studio$ Projects/Empty/cmake/toolchain-arm-none-eabi.cmake /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake
+build build.ninja /Users/chris/Visual$ Studio$ Projects/Empty/build/cmake_install.cmake: RERUN_CMAKE | /Users/chris/Visual$ Studio$ Projects/Empty/CMakeLists.txt /Users/chris/Visual$ Studio$ Projects/Empty/cmake/toolchain-arm-none-eabi.cmake /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/chris/Visual$ Studio$ Projects/Empty/CMakeLists.txt /Users/chris/Visual$ Studio$ Projects/Empty/cmake/toolchain-arm-none-eabi.cmake /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake: phony
+build /Users/chris/Visual$ Studio$ Projects/Empty/CMakeLists.txt /Users/chris/Visual$ Studio$ Projects/Empty/cmake/toolchain-arm-none-eabi.cmake /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake: phony
 
 
 #############################################
