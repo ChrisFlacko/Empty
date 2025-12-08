@@ -8,7 +8,6 @@ add_executable(${PROJECT_NAME}
     src/startup.c
     src/os.c
     src/adc_driver.c 
-    src/clock_driver.c 
     src/dma_driver.c 
     src/i2c_driver.c 
     src/spi_driver.c 
