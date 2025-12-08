@@ -25,12 +25,6 @@
 },
 {
   "directory": "/Users/chris/Visual Studio Projects/Empty/build",
-  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/clock_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/clock_driver.c\"",
-  "file": "/Users/chris/Visual Studio Projects/Empty/src/clock_driver.c",
-  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/clock_driver.c.obj"
-},
-{
-  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
   "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/dma_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/dma_driver.c\"",
   "file": "/Users/chris/Visual Studio Projects/Empty/src/dma_driver.c",
   "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/dma_driver.c.obj"

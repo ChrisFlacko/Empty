@@ -23,5 +23,7 @@
 #define GPIO_BSSR_SET(Pin, Mode)			(Mode << Pin)
 
 void Driver_GPIO_SetupPin(void);
+void Driver_GPIO_SetupLED(void);
+void Driver_GPIO_ActivateLED(void);
 
 #endif /* DRIVERS_GPIO_DRIVER_H_ */
