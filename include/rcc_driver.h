@@ -16,23 +16,18 @@
 #define RCC_CR_HSION_Pos            0U
 #define RCC_CR_HSION_Msk            (1U << RCC_CR_HSION_Pos)
 #define RCC_CR_HSION_EN             RCC_CR_HSION_Msk
-
 #define RCC_CR_HSIRDY_Pos            1U
 #define RCC_CR_HSIRDY_Msk            (1U << RCC_CR_HSIRDY_Pos)
 #define RCC_CR_HSIRDY_EN             RCC_CR_HSIRDY_Msk
-
 #define RCC_CR_HSEON_Pos            16U
 #define RCC_CR_HSEON_Msk            (1U << RCC_CR_HSEON_Pos)
 #define RCC_CR_HSEON_EN             RCC_CR_HSEON_Msk
-
 #define RCC_CR_HSERDY_Pos           17U
 #define RCC_CR_HSERDY_Msk           (1U << RCC_CR_HSERDY_Pos)
 #define RCC_CR_HSERDY_EN            RCC_CR_HSERDY_Msk
-
 #define RCC_CR_PLLON_Pos            24U
 #define RCC_CR_PLLON_Msk            (1U << RCC_CR_PLLON_Pos)
 #define RCC_CR_PLLON_EN             RCC_CR_PLLON_Msk
-
 #define RCC_CR_PLLRDY_Pos           25U
 #define RCC_CR_PLLRDY_Msk           (1U << RCC_CR_PLLRDY_Pos)
 #define RCC_CR_PLLRDY_EN            RCC_CR_PLLRDY_Msk
@@ -41,47 +36,36 @@
 #define RCC_CFGR_SW_Pos             0U
 #define RCC_CFGR_SW_Msk             (0x2U << RCC_CFGR_SW_Pos)
 #define RCC_CFGR_SW_EN(x)           (x << RCC_CFGR_SW_Pos)
-
 #define RCC_CFGR_SWS_Pos            2U
 #define RCC_CFGR_SWS_Msk            (0x2U << RCC_CFGR_SWS
 #define RCC_CFGR_SWS_EN(x)          (x << RCC_CFGR_SWS_Pos)
-
 #define RCC_CFGR_HPRE_Pos           4U
 #define RCC_CFGR_HPRE_Msk           (0xFU << RCC_CFGR_HPRE_Pos)
 #define RCC_CFGR_HPRE_EN(x)         (x << RCC_CFGR_HPRE_Pos)
-
 #define RCC_CFGR_PPRE1_Pos          8U
 #define RCC_CFGR_PPRE1_Msk          (0x7U << RCC_CFGR_PPRE1_Pos)
 #define RCC_CFGR_PPRE1_EN(x)        (x << RCC_CFGR_PPRE1_Pos)
-
 #define RCC_CFGR_PPRE2_Pos          11U
 #define RCC_CFGR_PPRE2_Msk          (0x7U << RCC_CFGR_PPRE2_Pos)
 #define RCC_CFGR_PPRE2_EN(x)        (x << RCC_CFGR_PPRE2_Pos)
-
 #define RCC_CFGR_PLLSRC_Pos        15U
 #define RCC_CFGR_PLLSRC_Msk        (0x3U << RCC_CFGR_PLLSRC_Pos)
 #define RCC_CFGR_PLLSRC_EN(x)      (x << RCC_CFGR_PLLSRC_Pos)
-
 #define RCC_CFGR_PLLXTPRE_Pos      17U
 #define RCC_CFGR_PLLXTPRE_Msk      (0x1U << RCC_CFGR_PLLXTPRE_Pos)
 #define RCC_CFGR_PLLXTPRE_EN(x)    (x << RCC_CFGR_PLLXTPRE_Pos) 
-
 #define RCC_CFGR_PLLMUL_Pos       18U
 #define RCC_CFGR_PLLMUL_Msk       (0xFU << RCC_CFGR_PLLMUL_Pos)
 #define RCC_CFGR_PLLMUL_EN(x)     (x << RCC_CFGR_PLLMUL_Pos)
-
 #define RCC_CFGR_USBPRE_Pos      22U
 #define RCC_CFGR_USBPRE_Msk      (0x1U << RCC_CFGR_USBPRE_Pos)
 #define RCC_CFGR_USBPRE_EN(x)    (x << RCC_CFGR_USBPRE_Pos)
-
 #define RCC_CFGR_MCO_Pos         24U
 #define RCC_CFGR_MCO_Msk         (0x7U << RCC_CFGR_MCO_Pos)
 #define RCC_CFGR_MCO_EN(x)       (x << RCC_CFGR_MCO_Pos)
-
 #define RCC_CFGR_MCOPRE_Pos      28U
 #define RCC_CFGR_MCOPRE_Msk      (0x7U << RCC_CFGR_MCOPRE_Pos)
 #define RCC_CFGR_MCOPRE_EN(x)    (x << RCC_CFGR_MCOPRE_Pos) 
-
 #define RCC_CFGR_PLLNODIV_Pos   31U
 #define RCC_CFGR_PLLNODIV_Msk   (0x1U << RCC_CFGR_PLLNODIV_Pos)
 #define RCC_CFGR_PLLNODIV_EN(x) (x << RCC_CFGR_PLLNODIV_Pos)
@@ -283,10 +267,16 @@
 #define RCC_ENABLE_TIM17()      (RCC->APB2ENR |= RCC_APB2ENR_TIM17EN_EN)
 #define RCC_ENABLE_TIM20()      (RCC->APB2ENR |= RCC_APB2ENR_TIM20EN_EN)
 
+/* Enum for the system clock */
+typedef enum SysClock
+{
+    HSIClock,
+    HSEClock,
+    PLLClock
+}SysClock_e;
 
-
-
-void Driver_RCC_ClockSetup();
+/* This function sets up the system clock */
+void Driver_RCC_ClockSetup(SysClock_e sysclock, uint32_t pllFreq);
 
 
 #endif /* DRIVERS_RCC_DRIVER_H_ */

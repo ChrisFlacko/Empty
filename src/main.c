@@ -1,16 +1,18 @@
 #include "main.h"
 #include "../include/gpio_driver.h"
 
-/*---------------------------------------------- Local Functions ---------------------------------------------------------------------*/
-static void Clock_Setup(void);
+/*---------------------------------------------- Defines-------- ---------------------------------------------------------------------*/
+#define PLL_FREQUENCY_72MHZ    72U
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*---------------------------------------------- Local Functions ---------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 
 int main(void)
 {
     /* Initialize system clock */
-    Clock_Setup();
+    Driver_RCC_ClockSetup(PLLClock, PLL_FREQUENCY_72MHZ);
 
     /* Initialize GPIO for LED and activate it*/
     Driver_GPIO_SetupLED();
@@ -20,8 +22,3 @@ int main(void)
     return 1;
 }
 
-static void Clock_Setup(void)
-{
-    /* Enable the HSI clock */
-    Driver_RCC_ClockSetup();
-}
