@@ -52,5 +52,23 @@
   "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/gpio_driver.c\"",
   "file": "/Users/chris/Visual Studio Projects/Empty/src/gpio_driver.c",
   "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/tim_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/tim_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/tim_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/tim_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/nvic_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/nvic_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/nvic_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/nvic_driver.c.obj"
+},
+{
+  "directory": "/Users/chris/Visual Studio Projects/Empty/build",
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g -o CMakeFiles/EMPTY.dir/src/flash_driver.c.obj -c \"/Users/chris/Visual Studio Projects/Empty/src/flash_driver.c\"",
+  "file": "/Users/chris/Visual Studio Projects/Empty/src/flash_driver.c",
+  "output": "/Users/chris/Visual Studio Projects/Empty/build/CMakeFiles/EMPTY.dir/src/flash_driver.c.obj"
 }
 ]

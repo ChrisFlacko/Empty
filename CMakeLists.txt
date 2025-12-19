@@ -13,6 +13,9 @@ add_executable(${PROJECT_NAME}
     src/spi_driver.c 
     src/rcc_driver.c
     src/gpio_driver.c
+    src/tim_driver.c
+    src/nvic_driver.c
+    src/flash_driver.c
 )
 set_target_properties(EMPTY PROPERTIES OUTPUT_NAME "EMPTY.elf")
 # Convert ELF to BIN after build

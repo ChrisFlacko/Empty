@@ -47,4 +47,15 @@
 #define SPI2	((TypeDef_SPI*) SPI2_BASE_ADDR)
 #define SPI3	((TypeDef_SPI*) SPI3_BASE_ADDR)
 
+/* Timer */
+#define TIM2    ((TypeDef_TIM*) TIM2_BASE_ADDR) 
+#define TIM6	((TypeDef_TIM*) TIM6_BASE_ADDR)
+#define TIM7	((TypeDef_TIM*) TIM7_BASE_ADDR)
+
+/* Flash */
+#define FLASH    ((TypeDef_FLASH*) FLASH_BASE_ADDR)
+
+/* Watchdog */
+#define IWDG    ((TypeDef_IWDG*) IWDG_BASE_ADDR)
+
 #endif /* PERIPHERALS_H_ */
