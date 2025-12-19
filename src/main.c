@@ -29,9 +29,6 @@ int main(void)
     /* Initialize GPIO for LED and activate it*/
     Driver_GPIO_SetupLED();
     //Driver_GPIO_ActivateLED();
-
-    /* Enable SysTick for 1s interrupts */
-    SysTick_Setup(72000000);
     
     while(1){}
     return 1;
@@ -57,6 +54,9 @@ void System_Init_Privileged(void)
     /* Initialize Timer Base */
     Timer2_Init();
     Timer6_Init();
+
+    /* Enable SysTick for 1s interrupts */
+    SysTick_Setup(72000000);
 
     /* Configuration of the Watchdog */
     Driver_IWDG_Init(IWDG_Prescaler_8, 5000);
