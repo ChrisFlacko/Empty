@@ -112,6 +112,27 @@ build CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj: C_COMPILER__EMPTY_unscanned_De
   OBJECT_DIR = CMakeFiles/EMPTY.dir
   OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
 
+build CMakeFiles/EMPTY.dir/src/tim_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/tim_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/tim_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/nvic_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/nvic_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/nvic_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
+build CMakeFiles/EMPTY.dir/src/flash_driver.c.obj: C_COMPILER__EMPTY_unscanned_Debug /Users/chris/Visual$ Studio$ Projects/Empty/src/flash_driver.c || cmake_object_order_depends_target_EMPTY
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/EMPTY.dir/src/flash_driver.c.obj.d
+  FLAGS = -g -mcpu=cortex-m4 -mthumb -ffreestanding -nostdlib -O0 -g
+  OBJECT_DIR = CMakeFiles/EMPTY.dir
+  OBJECT_FILE_DIR = CMakeFiles/EMPTY.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target EMPTY
@@ -120,7 +141,7 @@ build CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj: C_COMPILER__EMPTY_unscanned_De
 #############################################
 # Link the executable EMPTY.elf
 
-build EMPTY.elf: C_EXECUTABLE_LINKER__EMPTY_Debug CMakeFiles/EMPTY.dir/src/main.c.obj CMakeFiles/EMPTY.dir/src/startup.c.obj CMakeFiles/EMPTY.dir/src/os.c.obj CMakeFiles/EMPTY.dir/src/adc_driver.c.obj CMakeFiles/EMPTY.dir/src/dma_driver.c.obj CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj CMakeFiles/EMPTY.dir/src/spi_driver.c.obj CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj
+build EMPTY.elf: C_EXECUTABLE_LINKER__EMPTY_Debug CMakeFiles/EMPTY.dir/src/main.c.obj CMakeFiles/EMPTY.dir/src/startup.c.obj CMakeFiles/EMPTY.dir/src/os.c.obj CMakeFiles/EMPTY.dir/src/adc_driver.c.obj CMakeFiles/EMPTY.dir/src/dma_driver.c.obj CMakeFiles/EMPTY.dir/src/i2c_driver.c.obj CMakeFiles/EMPTY.dir/src/spi_driver.c.obj CMakeFiles/EMPTY.dir/src/rcc_driver.c.obj CMakeFiles/EMPTY.dir/src/gpio_driver.c.obj CMakeFiles/EMPTY.dir/src/tim_driver.c.obj CMakeFiles/EMPTY.dir/src/nvic_driver.c.obj CMakeFiles/EMPTY.dir/src/flash_driver.c.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = "-T/Users/chris/Visual Studio Projects/Empty/linker.ld" -nostdlib -Wl,--gc-sections

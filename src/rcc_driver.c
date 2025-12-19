@@ -17,6 +17,7 @@ void Driver_RCC_ClockSetup(SysClock_e sysclock, uint32_t pllFreq)
         break;
 
         case PLLClock:
+        
         uint32_t pllMulFactor = ((pllFreq / 8U) - 2U);
         
         /* Setup PLL clock */

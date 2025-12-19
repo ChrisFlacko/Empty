@@ -220,4 +220,40 @@ typedef struct
 	__IO uint32_t I2SPR;
 }TypeDef_SPI;
 
+typedef struct 
+{
+	uint32_t CR1;
+	uint32_t CR2;
+	uint32_t reserved;
+	uint32_t DIER;
+	uint32_t SR;
+	uint32_t EGR;
+	uint32_t reserved1[2];
+	uint32_t CNT;
+	uint32_t PSC;
+	uint32_t ARR;
+}TypeDef_TIM;
+
+typedef struct
+{
+	__IO uint32_t ACR;
+	__IO uint32_t KEYR;
+	__IO uint32_t OPTKEYR;
+	__IO uint32_t SR;
+	__IO uint32_t CR;
+	__IO uint32_t OPTCR;
+	__IO uint32_t OPTCR1;
+}TypeDef_FLASH;
+
+typedef struct
+{
+	__IO uint32_t KR;
+	__IO uint32_t PR;
+	__IO uint32_t RLR;
+	__IO uint32_t SR;
+	__IO uint32_t WINR;
+}TypeDef_IWDG;
+
+
+
 #endif /* TYPEDEFS_H_ */
