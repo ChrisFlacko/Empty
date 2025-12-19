@@ -3,9 +3,10 @@ This project focus on creating a embedded environment (necessary files, drivers,
 
 # RCC - Register
 3 clocks are available: 
-  HSI (8 MHz)
+  HSI = 8 MHz
   HSE
-  PLL (16 - 72 MHz)
+  PLL = 16 - 72 MHz
+  LSI = 40 kHz (between 30 and 50 kHz)
 
 HSI can be used as PLL input with a prescaler of 2 (divide by 2)
 
