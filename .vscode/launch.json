@@ -11,6 +11,7 @@
             "executable": "${workspaceRoot}/build/EMPTY.elf",
 
             "servertype": "stlink",
+            "svdFile": "${workspaceRoot}/svd/STM32F303.svd",
             "device": "STM32F303RE",
 
             "gdbPath": "/opt/arm-toolchain/bin/arm-none-eabi-gdb",

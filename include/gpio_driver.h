@@ -22,7 +22,27 @@
 #define GPIO_OPSPEED_SET(Pin, Mode)			(Mode << Pin)
 #define GPIO_BSSR_SET(Pin, Mode)			(Mode << Pin)
 
-void Driver_GPIO_SetupPin(void);
+typedef enum
+{
+    GPIO_MODE_INPUT = 0U,
+    GPIO_MODE_OUTPUT = 1U,
+    GPIO_MODE_ALTERNATE = 2U,
+    GPIO_MODE_ANALOG = 3U
+}GPIO_Mode_TypeDef;
+
+typedef enum
+{
+    GPIO_A = 0U,
+    GPIO_B,
+    GPIO_C,
+    GPIO_D,
+    GPIO_E,
+    GPIO_F,
+    GPIO_G,
+    GPIO_H
+}GPIO_Port_TypeDef;
+
+void Driver_GPIO_SetupPin(GPIO_Port_TypeDef port, uint8_t pin, GPIO_Mode_TypeDef mode);
 void Driver_GPIO_SetupLED(void);
 void Driver_GPIO_ActivateLED(void);
 void Driver_GPIO_ToggleLED(void);

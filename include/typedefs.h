@@ -234,6 +234,30 @@ typedef struct
 	uint32_t ARR;
 }TypeDef_TIM;
 
+typedef struct 
+{
+	uint32_t CR1;
+	uint32_t CR2;
+	uint32_t SMCR;
+	uint32_t DIER;
+	uint32_t SR;
+	uint32_t EGR;
+	uint32_t CCMR1;
+	uint32_t CCMR2;
+	uint32_t CCER;
+	uint32_t CNT;
+	uint32_t PSC;
+	uint32_t ARR;
+	uint32_t reserved;
+	uint32_t CCR1;
+	uint32_t CCR2;
+	uint32_t CCR3;
+	uint32_t CCR4;
+	uint32_t reserved1;
+	uint32_t DCR;
+	uint32_t DMAR;
+}TypeDef_TIM_Basic234;
+
 typedef struct
 {
 	__IO uint32_t ACR;

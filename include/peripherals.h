@@ -48,7 +48,7 @@
 #define SPI3	((TypeDef_SPI*) SPI3_BASE_ADDR)
 
 /* Timer */
-#define TIM2    ((TypeDef_TIM*) TIM2_BASE_ADDR) 
+#define TIM2    ((TypeDef_TIM_Basic234*) TIM2_BASE_ADDR) 
 #define TIM6	((TypeDef_TIM*) TIM6_BASE_ADDR)
 #define TIM7	((TypeDef_TIM*) TIM7_BASE_ADDR)
 

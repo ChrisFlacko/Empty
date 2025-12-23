@@ -16,8 +16,7 @@ void SysTick_Setup(uint32_t ticks);
 /*---------------------------------------------- Interrupt Functions -----------------------------------------------------------------*/
 void SysTick_Handler(void)
 {
-    //SysTick Interrupt Handler
-    Driver_GPIO_ToggleLED();
+    
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -28,9 +27,13 @@ int main(void)
 
     /* Initialize GPIO for LED and activate it*/
     Driver_GPIO_SetupLED();
-    //Driver_GPIO_ActivateLED();
+    Driver_GPIO_ActivateLED();
     
-    while(1){}
+    while(1)
+    {
+        Driver_GPIO_ToggleLED();
+        DelayUs(1000000);  // 1 Sekunde
+    }
     return 1;
 }
 
@@ -53,12 +56,12 @@ void System_Init_Privileged(void)
 
     /* Initialize Timer Base */
     Timer2_Init();
-    Timer6_Init();
+    //Timer6_Init();
 
     /* Enable SysTick for 1s interrupts */
     SysTick_Setup(72000000);
 
     /* Configuration of the Watchdog */
-    Driver_IWDG_Init(IWDG_Prescaler_8, 5000);
+    //Driver_IWDG_Init(IWDG_Prescaler_8, 5000);
 }
 
