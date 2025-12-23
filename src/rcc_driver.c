@@ -21,8 +21,8 @@ void Driver_RCC_ClockSetup(SysClock_e sysclock, uint32_t pllFreq)
         uint32_t pllMulFactor = ((pllFreq / 8U) - 2U);
         
         /* Setup PLL clock */
-        RCC->CFGR |= RCC_CFGR_SW_EN(2U); //Select PLL as system clock
         RCC->CFGR |= RCC_CFGR_HPRE_EN(0U); //AHB prescaler = 1
+        RCC->CFGR &= ~RCC_CFGR_PPRE1_Msk;
         RCC->CFGR |= RCC_CFGR_PPRE1_EN(4U); //APB1 prescaler = 2
         RCC->CFGR |= RCC_CFGR_PPRE2_EN(0U); //APB2 prescaler = 1
         RCC->CFGR |= RCC_CFGR_PLLSRC_EN(0U); //HSI as PLL source
@@ -32,6 +32,7 @@ void Driver_RCC_ClockSetup(SysClock_e sysclock, uint32_t pllFreq)
         {
             ; //Wait till PLL is ready
         }
+        RCC->CFGR |= RCC_CFGR_SW_EN(2U); //Select PLL as system clock
         
         break;
 

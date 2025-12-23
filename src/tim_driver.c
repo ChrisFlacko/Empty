@@ -26,14 +26,25 @@ void Timer2_Init(void)
     RCC_ENABLE_TIM2();
 
     /* Configure Timer 2 */
-    TIM2->CR1 &= ~BASIC_TIM_CR1_CEN_EN;          /* Disable Timer */
-    TIM2->PSC = BASIC_TIM_PSC_SET(35);           /* Set Prescaler so there is a 1µs Tick */
+    TIM2->CR1 = 0;                               /* Disable Timer */
+    TIM2->CNT = 0;                               /* Reset Counter */
+    TIM2->PSC = 71U;                             /* Set Prescaler so there is a 1µs Tick */
     TIM2->ARR = 0xFFFFFFFFU;                     /* Set Auto-Reload Value to the max value possible */
     TIM2->CR1 &= ~BASIC_TIM_CR1_OPM_EN;          /* Set Timer to Continuous Mode */
-    TIM2->DIER &= ~BASIC_TIM_DIER_UIE_EN;         /* Disable Update Interrupt */
-    TIM2->EGR |= BASIC_TIM_EGR_UG_EN;            /* Generate an Update Event to load the Prescaler value immediately */
+    TIM2->DIER &= ~BASIC_TIM_DIER_UIE_EN;        /* Disable Update Interrupt */
+    TIM2->EGR = BASIC_TIM_EGR_UG_EN;             /* Generate an Update Event to load the Prescaler value immediately */
     TIM2->SR &= ~BASIC_TIM_SR_UIF_EN;            /* Clear Update Interrupt Flag */
     TIM2->CR1 |= BASIC_TIM_CR1_CEN_EN;           /* Enable Timer */
+}
+
+uint32_t start = 0;
+void DelayUs(uint32_t microseconds)
+{
+    start = TIM2->CNT;
+    while ((uint32_t)(TIM2->CNT - start) < microseconds)
+    {
+        /* wait */
+    }
 }
 
 // Reload 5000 with prescaler 8 gives a 1s timeout with a 40kHz clock
