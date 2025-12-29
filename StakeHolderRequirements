@@ -1,0 +1,17 @@
+Stake_Req_1:
+The system shall operate reliably without entering states in which no further operation is possible or where system responses exceed acceptable time limits.
+
+Stake_Req_2:
+The system shall be capable of transmitting collected and processed data to an external controller or system.
+
+Stake_Req_3:
+The system shall acquire temperature and humidity data from connected sensors.
+
+Stake_Req_4:
+The system shall indicate when the measured temperature is outside the range of 18 °C to 20 °C.
+
+Stake_Req_5:
+The system shall indicate when the measured relative humidity is outside the range of 45 % to 60 %.
+
+Stake_Req_6:
+The system shall perform temperature and humidity measurements periodically at intervals of 60 seconds.
