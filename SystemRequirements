@@ -1,0 +1,51 @@
+SysReq_1:
+The system must have a watchdog timer (IWDG) which is triggerd within 1 second. If one second passes without the reset of the IWDG, a reset should be performed.
+(Stake_Req_1)
+
+SysReq_2:
+The system must have a USART module which is capable of sending data out to another controller. 
+(Stake_Req_2)
+
+SysReq_3:
+The system must have a USART module which is capable of receiving data from another controller. 
+(Stake_Req_2)
+
+SysReq_4:
+The system must have a SPI module which is capable of sending data out to another controller.
+(Stake_Req_2)
+
+SysReq_5:
+The system must have a SPI module which is capable of receiving data from another controller. 
+(Stake_Req_2)
+
+SysReq_6:
+The system must implement a function to read out the data of a DHT11 sensor. 
+(Stake_Req_3)
+
+SysReq_7:
+The system must convert and interprete the temperature data. 
+(Stake_Req_4)
+
+SysReq_8:
+The system must convert and interprete the humidity data. 
+(Stake_Req_5)
+
+SysReq_9:
+The system must connect the interpretation of the data to the LED on the board.
+(Stake_Req_4)(Stake_Req_5)
+
+SysReq_10:
+The system must read out the data of the DHT11 sensor every second.
+(Stake_Req_6)
+
+SysReq_11:
+The system must have a OLED display which is connected with the controller. 
+(Stake_Req_7)
+
+SysReq_12:
+The system must have a function to display error/warning information on the display. 
+(Stake_Req_7)
+
+SysReq_13:
+The system must have a function to display the temperature and humidity information on the display. 
+(Stake_Req_8)
