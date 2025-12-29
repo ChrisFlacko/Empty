@@ -15,3 +15,9 @@ The system shall indicate when the measured relative humidity is outside the ran
 
 Stake_Req_6:
 The system shall perform temperature and humidity measurements periodically at intervals of 60 seconds.
+
+Stake_Req_7:
+The system shall display error messages or warnings on an OLED display.
+
+Stake_Req_8:
+The system shall have the option to display the temperature and humidity on an OLED display.
